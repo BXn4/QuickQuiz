@@ -1,13 +1,17 @@
 msgid "MENU_STATS"
-msgstr "**Your stats**"
+msgstr "Stats for: **@%s**"
+
+# Coins
+msgid "MENU_COINS"
+msgstr "**Coins:** %d"
 
 # Level, current level progress
 msgid "MENU_LEVEL"
-msgstr "**Level:** %d (%d%%)"
+msgstr "**Level:** %d • (%d%%)"
 
 # Needed xp, next level
 msgid "MENU_LEVELUP"
-msgstr "**%d XP** need to achieve level %d"
+msgstr "**%d XP** need to level %d"
 
 # Correct anwsers number
 msgid "MENU_CORRECT_ANSWERS"
@@ -20,3 +24,23 @@ msgstr "**Streak:** %d"
 # Answer streak number
 msgid "MENU_BEST_STREAK"
 msgstr "**Best streak:** %d"
+
+# BUTTONS
+
+msgid "QUIZ_NEW"
+msgstr "New Quiz"
+
+msgid "QUIZ_LIST"
+msgstr "Quizzes"
+
+msgid "QUIZ_TOPLIST"
+msgstr "Toplist"
+
+msgid "QUIZ_PACKS"
+msgstr "Packs"
+
+msgid "QUIZ_SHOP"
+msgstr "Shop"
+
+msgid "QUIZ_SPONSOR"
+msgstr "Sponsor"
