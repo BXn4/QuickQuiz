@@ -1,0 +1,22 @@
+msgid "MENU_STATS"
+msgstr "**Your stats**"
+
+# Level, current level progress
+msgid "MENU_LEVEL"
+msgstr "**Level:** %d (%d%%)"
+
+# Needed xp, next level
+msgid "MENU_LEVELUP"
+msgstr "**%d XP** need to achieve level %d"
+
+# Correct anwsers number
+msgid "MENU_CORRECT_ANSWERS"
+msgstr "**Correct answers:** %d"
+
+# Answer streak number
+msgid "MENU_STREAK"
+msgstr "**Streak:** %d"
+
+# Answer streak number
+msgid "MENU_BEST_STREAK"
+msgstr "**Best streak:** %d"

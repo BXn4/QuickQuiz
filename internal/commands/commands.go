@@ -2,6 +2,7 @@ package commands
 
 import (
 	"github.com/bwmarrin/discordgo"
+	"github.com/bxn4/QuickQuiz/internal/commands/quiz"
 )
 
 var (
@@ -20,15 +21,6 @@ func HandleCommands(s *discordgo.Session, i *discordgo.InteractionCreate) {
 
 	switch i.ApplicationCommandData().Name {
 	case "quiz":
-		handleQuiz(s, i)
+		quiz.HandleQuizMenu(s, i)
 	}
-}
-
-func handleQuiz(s *discordgo.Session, i *discordgo.InteractionCreate) {
-	s.InteractionRespond(i.Interaction, &discordgo.InteractionResponse{
-		Type: discordgo.InteractionResponseChannelMessageWithSource,
-		Data: &discordgo.InteractionResponseData{
-			Content: "Here's the quiz menu! 🎯",
-		},
-	})
 }
