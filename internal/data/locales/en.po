@@ -25,8 +25,69 @@ msgstr "**Streak:** %d"
 msgid "MENU_BEST_STREAK"
 msgstr "**Best streak:** %d"
 
-# BUTTONS
 
+# MESSAGES
+msgid "QUICK_QUIZ_NOT_SET"
+msgstr "QuickQuiz hasn't been configured yet :( \nTo use it, please contact the server owner or an admin. \nSetup only takes around 10 seconds!"
+
+msgid "WELCOME_USE_HELP"
+msgstr "Need help? Just use the `/help` command!"
+
+msgid "WELCOME_TITLE_STEP_1"
+msgstr "Welcome to QuickQuiz!"
+
+msgid "WELCOME_TITLE_STEP_2"
+msgstr "Let’s create the Quiz Creator role!"
+
+msgid "WELCOME_TITLE_STEP_3"
+msgstr "Role created!"
+
+msgid "WELCOME_TITLE_STEP_4"
+msgstr "Now let’s set up a Quiz channel!"
+
+msgid "WELCOME_TITLE_STEP_5"
+msgstr "Channel created!"
+
+msgid "WELCOME_TITLE_STEP_6"
+msgstr "All set and ready to go!"
+
+msgid "WELCOME_GUIDE_STEP_1"
+msgstr "Follow these steps to set up QuickQuiz. Server owner or admins can change these settings anytime from the menu."
+
+msgid "WELCOME_GUIDE_STEP_1_1"
+msgstr "Current language: %s. To switch languages, press the 'Change Language' button."
+
+msgid "WELCOME_GUIDE_STEP_1_2"
+msgstr "Press the right arrow to continue."
+
+msgid "WELCOME_GUIDE_STEP_2"
+msgstr "This role allows selected members to create, edit, start, stop, or delete quizzes."
+
+msgid "WELCOME_GUIDE_STEP_2_1"
+msgstr "Create a new role and assign it using the `/role` command, or copy the role ID and press the 'Change Role' button."
+
+msgid "WELCOME_GUIDE_STEP_2_2"
+msgstr "Once done, press the right arrow to continue."
+
+msgid "WELCOME_GUIDE_STEP_3_1"
+msgstr "Now that the role is ready, assign it to members who should manage quizzes. You can do this via server role settings or by right-clicking a user and editing their roles."
+
+msgid "WELCOME_GUIDE_STEP_3_2"
+msgstr "After assigning the role, press the right arrow to continue."
+
+msgid "WELCOME_GUIDE_STEP_4_1"
+msgstr "Set the channel where quizzes will be posted using the `/channel` command, or copy the channel ID and press the 'Change Channel' button."
+
+msgid "WELCOME_GUIDE_STEP_5"
+msgstr "You're all set! Members can now use the bot with the `/quiz` command."
+
+msgid "EVERYONE_ROLE"
+msgstr "Everyone? That might not be the best idea..."
+
+msgid "LANGUAGE_NOT_SUPPORTED"
+msgstr "This language isn’t supported yet :( Want to help add it? Click the 'View Languages Repo' button to visit our GitHub repository."
+
+# BUTTONS
 msgid "QUIZ_NEW"
 msgstr "New Quiz"
 
@@ -44,3 +105,9 @@ msgstr "Shop"
 
 msgid "QUIZ_SPONSOR"
 msgstr "Sponsor"
+
+msgid "BOT_SETTINGS"
+msgstr "Settings"
+
+msgid "VIEW_MY_STATS"
+msgstr "My stats"

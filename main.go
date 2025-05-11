@@ -8,6 +8,7 @@ import (
 	"syscall"
 
 	"github.com/bxn4/QuickQuiz/internal/commands"
+	"github.com/bxn4/QuickQuiz/internal/modules/database"
 
 	"github.com/bwmarrin/discordgo"
 	"github.com/joho/godotenv"
@@ -19,9 +20,9 @@ func main() {
 		log.Fatal("Cannot find .env file!")
 	}
 
-	token := env["TOKEN"]
+	database.ConnectToDB(env["USERNAME"], env["PASSWORD"], env["DATABASE"])
 
-	s, err := discordgo.New("Bot " + token)
+	s, err := discordgo.New("Bot " + env["TOKEN"])
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -35,6 +36,7 @@ func main() {
 	defer s.Close()
 
 	fmt.Printf(`
+QuickQuiz made by @bxn4
 Watching %d servers.
 Stats:
 - Registered Users:   %d
@@ -43,9 +45,9 @@ Stats:
 
 `,
 		len(s.State.Guilds),
-		0, // Registered Users
-		0, // Total Quizzes
-		0, // Active Quizzes
+		database.GetRegisteredUsersCount(), // Registered Users
+		0,                                  // Total Quizzes
+		0,                                  // Active Quizzes
 	)
 
 	sc := make(chan os.Signal, 1)
