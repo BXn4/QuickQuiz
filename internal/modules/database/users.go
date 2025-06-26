@@ -24,9 +24,18 @@ func CheckIfUserRegistered(userID uint64) bool {
 	return true
 }
 
-func RegisterUser(userID uint64) {
-	_, err := DB.Exec("INSERT INTO users (id) VALUES ($1)", userID)
+func RegisterUser(userID uint64, language string) {
+	_, err := DB.Exec("INSERT INTO users (id, language) VALUES ($1, $2)", userID, language)
 	if err != nil {
 		log.Fatal(err)
 	}
+}
+
+func GetUserLanguage(userID uint64) string {
+	var language string
+	err := DB.QueryRow("SELECT language FROM users WHERE id = $1", userID).Scan(&language)
+	if err != nil {
+		return "en"
+	}
+	return language
 }

@@ -15,7 +15,7 @@ func HandleQuizMenu(s *discordgo.Session, i *discordgo.InteractionCreate) {
 
 	guildID := i.GuildID
 	if guildID != "" {
-		username := "bence:|NXM"
+		username := i.Member.Nick
 		level := 10
 		levelProgress := 41.5
 		levelNeededXP := 100
@@ -79,9 +79,9 @@ func HandleQuizMenu(s *discordgo.Session, i *discordgo.InteractionCreate) {
 			discordgo.ActionsRow{
 				Components: []discordgo.MessageComponent{
 					discordgo.Button{
-						Label:    fmt.Sprintf("%s %s", utils.Emojis.QUIZ_SPONSOR, utils.GetTranslation(languageCode, utils.Translations.QUIZ_SPONSOR)),
+						Label:    fmt.Sprintf("%s %s", utils.Emojis.QUIZ_PREMIUM, utils.GetTranslation(languageCode, utils.Translations.QUIZ_PREMIUM)),
 						Style:    discordgo.PrimaryButton,
-						CustomID: utils.IDs.QUIZ_SPONSOR,
+						CustomID: utils.IDs.QUIZ_PREMIUM,
 					},
 					discordgo.Button{
 						Label:    fmt.Sprintf("%s %s", utils.Emojis.OWNER_SETTINGS, utils.GetTranslation(languageCode, utils.Translations.BOT_SETTINGS)),
@@ -133,9 +133,9 @@ func HandleQuizMenu(s *discordgo.Session, i *discordgo.InteractionCreate) {
 			discordgo.ActionsRow{
 				Components: []discordgo.MessageComponent{
 					discordgo.Button{
-						Label:    fmt.Sprintf("%s %s", utils.Emojis.QUIZ_SPONSOR, utils.GetTranslation(languageCode, utils.Translations.QUIZ_SPONSOR)),
+						Label:    fmt.Sprintf("%s %s", utils.Emojis.QUIZ_PREMIUM, utils.GetTranslation(languageCode, utils.Translations.QUIZ_PREMIUM)),
 						Style:    discordgo.PrimaryButton,
-						CustomID: utils.IDs.QUIZ_SPONSOR,
+						CustomID: utils.IDs.QUIZ_PREMIUM,
 					},
 					discordgo.Button{
 						Label:    fmt.Sprintf("%s %s", utils.Emojis.OWNER_SETTINGS, utils.GetTranslation(languageCode, utils.Translations.BOT_SETTINGS)),

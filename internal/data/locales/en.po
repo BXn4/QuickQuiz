@@ -55,7 +55,7 @@ msgid "WELCOME_GUIDE_STEP_1"
 msgstr "Follow these steps to set up QuickQuiz. Server owner or admins can change these settings anytime from the menu."
 
 msgid "WELCOME_GUIDE_STEP_1_1"
-msgstr "Current language: %s. To switch languages, press the 'Change Language' button."
+msgstr "**Current language: %s**. \nTo switch languages, press the 'Change Language' button."
 
 msgid "WELCOME_GUIDE_STEP_1_2"
 msgstr "Press the right arrow to continue."
@@ -85,7 +85,13 @@ msgid "EVERYONE_ROLE"
 msgstr "Everyone? That might not be the best idea..."
 
 msgid "LANGUAGE_NOT_SUPPORTED"
-msgstr "This language isn’t supported yet :( Want to help add it? Click the 'View Languages Repo' button to visit our GitHub repository."
+msgstr "This language isn’t supported yet or not valid :c Want to help add it? Click the 'View Languages Repo' button to visit our GitHub repository."
+
+msgid "SERVER_LANGUAGE_CHANGED"
+msgstr "**Server quiz language changed to: %s**."
+
+msgid "ERROR_TITLE"
+msgstr "Oops!"
 
 # BUTTONS
 msgid "QUIZ_NEW"
@@ -103,11 +109,20 @@ msgstr "Packs"
 msgid "QUIZ_SHOP"
 msgstr "Shop"
 
-msgid "QUIZ_SPONSOR"
-msgstr "Sponsor"
+msgid "QUIZ_PREMIUM"
+msgstr "Premium"
 
 msgid "BOT_SETTINGS"
 msgstr "Settings"
 
 msgid "VIEW_MY_STATS"
 msgstr "My stats"
+
+msgid "CHANGE_LANGUAGE"
+msgstr "Change language"
+
+msgid "CHANGE_LANGUAGE_LABEL"
+msgstr "Enter Language"
+
+msgid "CHANGE_LANGUAGE_PLACEHOLDER"
+msgstr "e.g., 'en' or 'english' for English, 'pl' for Polish, 'de' or 'deutsch' for German, etc."

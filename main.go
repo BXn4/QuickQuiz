@@ -40,14 +40,16 @@ QuickQuiz made by @bxn4
 Watching %d servers.
 Stats:
 - Registered Users:   %d
+- Registered Servers: %d
 - Total Quizzes:      %d
 - Active Quizzes:     %d
 
 `,
 		len(s.State.Guilds),
-		database.GetRegisteredUsersCount(), // Registered Users
-		0,                                  // Total Quizzes
-		0,                                  // Active Quizzes
+		database.GetRegisteredUsersCount(),   // Registered Users
+		database.GetRegisteredServersCount(), // Registered Users
+		0,                                    // Total Quizzes
+		0,                                    // Active Quizzes
 	)
 
 	sc := make(chan os.Signal, 1)

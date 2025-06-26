@@ -72,17 +72,19 @@ func createTables() error {
 		question TEXT NOT NULL,
 		reason TEXT,
 		thumbnail TEXT,
+		answers TEXT NOT NULL,
+		correct_answer SMALLINT NOT NULL,
 		active_time SMALLINT NOT NULL,
 		created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 	);
 
 	CREATE TABLE IF NOT EXISTS servers (
-		id SERIAL PRIMARY KEY,
-		quizzes INTEGER[],
+		id BIGINT PRIMARY KEY,
+		quizzes TEXT[],
 		active_quiz VARCHAR(100),
 		quiz_role BIGSERIAL,
 		quiz_channel BIGSERIAL,
-		language VARCHAR(2) DEFAULT 'EN'
+		language VARCHAR(2) DEFAULT 'en'
 	);
 
 	CREATE TABLE IF NOT EXISTS quiz_packs (
@@ -95,15 +97,15 @@ func createTables() error {
 	);
 
 	CREATE TABLE IF NOT EXISTS users (
-    id BIGSERIAL PRIMARY KEY,
-    language VARCHAR(2) DEFAULT 'en',
+    id BIGINT PRIMARY KEY,
+    language VARCHAR(2) NOT NULL,
     is_premium BOOLEAN DEFAULT FALSE,
     registered_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
 
     CREATE TABLE IF NOT EXISTS user_server (
         user_id BIGINT REFERENCES users(id) ON DELETE CASCADE,
-        server_id INTEGER REFERENCES servers(id) ON DELETE CASCADE,
+        server_id BIGINT REFERENCES servers(id) ON DELETE CASCADE,
         xp BIGINT DEFAULT 0,
         answers INT DEFAULT 0,
         correct_answers INT DEFAULT 0,
