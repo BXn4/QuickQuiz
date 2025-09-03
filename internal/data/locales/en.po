@@ -1,0 +1,128 @@
+msgid "MENU_STATS"
+msgstr "Stats for: **@%s**"
+
+# Coins
+msgid "MENU_COINS"
+msgstr "**Coins:** %d"
+
+# Level, current level progress
+msgid "MENU_LEVEL"
+msgstr "**Level:** %d • (%d%%)"
+
+# Needed xp, next level
+msgid "MENU_LEVELUP"
+msgstr "**%d XP** need to level %d"
+
+# Correct anwsers number
+msgid "MENU_CORRECT_ANSWERS"
+msgstr "**Correct answers:** %d"
+
+# Answer streak number
+msgid "MENU_STREAK"
+msgstr "**Streak:** %d"
+
+# Answer streak number
+msgid "MENU_BEST_STREAK"
+msgstr "**Best streak:** %d"
+
+
+# MESSAGES
+msgid "QUICK_QUIZ_NOT_SET"
+msgstr "QuickQuiz hasn't been configured yet :( \nTo use it, please contact the server owner or an admin. \nSetup only takes around 10 seconds!"
+
+msgid "WELCOME_USE_HELP"
+msgstr "Need help? Just use the `/help` command!"
+
+msgid "WELCOME_TITLE_STEP_1"
+msgstr "Welcome to QuickQuiz!"
+
+msgid "WELCOME_TITLE_STEP_2"
+msgstr "Let’s create the Quiz Creator role!"
+
+msgid "WELCOME_TITLE_STEP_3"
+msgstr "Role created!"
+
+msgid "WELCOME_TITLE_STEP_4"
+msgstr "Now let’s set up a Quiz channel!"
+
+msgid "WELCOME_TITLE_STEP_5"
+msgstr "Channel created!"
+
+msgid "WELCOME_TITLE_STEP_6"
+msgstr "All set and ready to go!"
+
+msgid "WELCOME_GUIDE_STEP_1"
+msgstr "Follow these steps to set up QuickQuiz. Server owner or admins can change these settings anytime from the menu."
+
+msgid "WELCOME_GUIDE_STEP_1_1"
+msgstr "**Current language: %s**. \nTo switch languages, press the 'Change Language' button."
+
+msgid "WELCOME_GUIDE_STEP_1_2"
+msgstr "Press the right arrow to continue."
+
+msgid "WELCOME_GUIDE_STEP_2"
+msgstr "This role allows selected members to create, edit, start, stop, or delete quizzes."
+
+msgid "WELCOME_GUIDE_STEP_2_1"
+msgstr "Create a new role and assign it using the `/role` command, or copy the role ID and press the 'Change Role' button."
+
+msgid "WELCOME_GUIDE_STEP_2_2"
+msgstr "Once done, press the right arrow to continue."
+
+msgid "WELCOME_GUIDE_STEP_3_1"
+msgstr "Now that the role is ready, assign it to members who should manage quizzes. You can do this via server role settings or by right-clicking a user and editing their roles."
+
+msgid "WELCOME_GUIDE_STEP_3_2"
+msgstr "After assigning the role, press the right arrow to continue."
+
+msgid "WELCOME_GUIDE_STEP_4_1"
+msgstr "Set the channel where quizzes will be posted using the `/channel` command, or copy the channel ID and press the 'Change Channel' button."
+
+msgid "WELCOME_GUIDE_STEP_5"
+msgstr "You're all set! Members can now use the bot with the `/quiz` command."
+
+msgid "EVERYONE_ROLE"
+msgstr "Everyone? That might not be the best idea..."
+
+msgid "LANGUAGE_NOT_SUPPORTED"
+msgstr "This language isn’t supported yet or not valid :c Want to help add it? Click the 'View Languages Repo' button to visit our GitHub repository."
+
+msgid "SERVER_LANGUAGE_CHANGED"
+msgstr "**Server quiz language changed to: %s**."
+
+msgid "ERROR_TITLE"
+msgstr "Oops!"
+
+# BUTTONS
+msgid "QUIZ_NEW"
+msgstr "New Quiz"
+
+msgid "QUIZ_LIST"
+msgstr "Quizzes"
+
+msgid "QUIZ_TOPLIST"
+msgstr "Toplist"
+
+msgid "QUIZ_PACKS"
+msgstr "Packs"
+
+msgid "QUIZ_SHOP"
+msgstr "Shop"
+
+msgid "QUIZ_PREMIUM"
+msgstr "Premium"
+
+msgid "BOT_SETTINGS"
+msgstr "Settings"
+
+msgid "VIEW_MY_STATS"
+msgstr "My stats"
+
+msgid "CHANGE_LANGUAGE"
+msgstr "Change language"
+
+msgid "CHANGE_LANGUAGE_LABEL"
+msgstr "Enter Language"
+
+msgid "CHANGE_LANGUAGE_PLACEHOLDER"
+msgstr "e.g., 'en' or 'english' for English, 'pl' for Polish, 'de' or 'deutsch' for German, etc."
